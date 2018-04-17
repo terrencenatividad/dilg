@@ -40,7 +40,7 @@ class access {
 		$login		= $session->get('login');
 		$username	= isset($login['username']) ? $login['username'] : '';
 
-		$checktime = $this->date->datetimeDbFormat('', '+30 minutes');
+		$checktime = $this->date->datetimeDbFormat('', '+90 days');
 		$db->setTable(PRE_TABLE . '_users')
 			->setValues(array('checktime' => $checktime))
 			->setWhere("username = '{$login['username']}'")
