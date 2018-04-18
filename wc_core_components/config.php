@@ -13,7 +13,7 @@ date_default_timezone_set($timezone);
 // SESSION CONFIG
 session_start();
 session_cache_limiter('private');
-session_cache_expire(480);
+session_cache_expire(129600);
 // DATABASE CONFIG
 define('WC_HOSTNAME', 'localhost');
 define('WC_USERNAME', 'root');
